@@ -24,17 +24,17 @@ public class FileTablePanel extends JPanel {
 
     private void initializeUI() {
         setLayout(new BorderLayout());
-        setBackground(new Color(173, 216, 230)); 
+        setBackground(new Color(235, 224, 199)); 
 
         tableModel = new DefaultTableModel(new Object[]{"Filename", "Last Modified"}, 0);
         fileTable = new JTable(tableModel);
         fileTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         fileTable.setBackground(Color.WHITE);
         fileTable.setForeground(Color.BLACK);
-        fileTable.getTableHeader().setBackground(new Color(135, 206, 235));
+        fileTable.getTableHeader().setBackground(new Color(235, 224, 199));
 
         JScrollPane scrollPane = new JScrollPane(fileTable);
-        scrollPane.setBackground(new Color(135, 206, 235)); 
+        scrollPane.setBackground(new Color(235, 224, 199)); 
         add(scrollPane, BorderLayout.CENTER);
 
         fileTable.addKeyListener(new KeyAdapter() {

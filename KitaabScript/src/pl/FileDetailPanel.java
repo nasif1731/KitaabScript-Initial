@@ -22,7 +22,7 @@ public class FileDetailPanel extends JPanel {
 
     private void initializeUI() {
         setLayout(new BorderLayout());
-        setBackground(new Color(135, 206, 235));
+        setBackground(new Color(235, 224, 199));
 
         fileContentArea = new JTextPane();
         fileContentArea.setEditable(false);
@@ -33,11 +33,11 @@ public class FileDetailPanel extends JPanel {
         buttonPanel.setLayout(new BorderLayout());
 
         updateButton = new JButton("Update");
-        updateButton.setBackground(new Color(0, 100, 0));
+        updateButton.setBackground(new Color(138, 83, 43));
         updateButton.setForeground(Color.WHITE);
         
-        buttonPanel.add(updateButton, BorderLayout.WEST); // Align button to the left
-        buttonPanel.setBackground(new Color(135, 206, 235));
+        buttonPanel.add(updateButton, BorderLayout.WEST); 
+        buttonPanel.setBackground(new Color(235, 224, 199));
 
         add(buttonPanel, BorderLayout.NORTH);
 
